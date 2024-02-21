@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tools360</title>
+    <title>ToolsMax</title>
     <link rel="shortcut icon" type="image" href="./image/logo2.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -22,6 +22,7 @@
     <!-- top navbar -->
     <div class="top-navbar">
         <div class="top-icons">
+            <img src="images/logo.png" width="100px" height="100px" >
             <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="https://twitter.com/?lang=en-in"><i class="fa-brands fa-twitter"></i></a>
@@ -31,17 +32,17 @@
             <button id="btn-signup"><a href="signup.html">Sign up</a></button>
 
             
-             <i class="fa-solid fa-shopping-cart "></i><span>5</span>
+           
+                <a  onclick="buynow()"><i class="fa fa-shopping-cart "></i><span class="badge" style="background-color: #000;border-radius: 100%;" id="cartincrement">0</span></a>
+       
          
         </div>
     </div>
-    <!-- top navbar -->
-
     <div class="home-section">
         <!-- navbar -->
         <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="" alt="Tools360" width="180px"></a>
+            
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
               </button>
@@ -51,9 +52,12 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="products.html">Rent</a>
+                    <a class="nav-link" href="sales.html">Sales</a>
                   </li>
-                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="rent.html">Rent</a>
+                  </li>
+                  
                   <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us</a>
                   </li>
@@ -106,7 +110,7 @@
                       <h3>Aerators</h3>
                       <h2>MRP-<strike> Rs:7000 </strike>Rs:5999</h2>
                       <p>Designed exclusively for the rental industry, the Classen 18" Compact Aerator (CA-18) is the ideal aerator for moderate and small sized properties.This unit is easy to rent with a fold-down handle, removable weights, tie-down brackets and side lift handles. Classen… Serious lawn care made easy.</p>
-                      <button id="shopnow"><a href="#">ADD CART </a></button> 
+                      <button id="shopnow" onclick="incrementButton()">ADD CART </button> 
                        </center>
                   </div>
               </div>
@@ -122,7 +126,7 @@
                         PRO Aerator</h3>
                         <h2>MRP-<strike> Rs:7500 </strike>Rs:6499</h2>
                         <P>Legendary performance, uncompromising durability and Easy Steer Technology make lawn aeration quick and easy. Enjoy the productivity of non-stop aeration.This unit is easy to rent with a fold-down handle, removable weights, tie-down brackets and side lift handles. Classen… Serious lawn care made easy. </P>
-                      <button id="shopnow"><a href="#">ADD CART </a></button> 
+                        <button id="shopnow" onclick="incrementButton()">ADD CART </button>
                        </center>
 
                   </div>
@@ -135,7 +139,7 @@
                       <center><h3>Towable Aerator</h3>
                         <h2>MRP-<strike> Rs:4500 </strike>Rs:3999</h2>
                       <p>Perfect for aerating large open spaces. Holds up to 24 gallons of water to increase weight to 200 lbs. Width of coreing patch 52".This unit is easy to rent with a fold-down handle, removable weights, tie-down brackets and side lift handles. Classen… Serious lawn care made easy.</p>
-                      <button id="shopnow"><a href="#">ADD CART </a></button> 
+                      <button id="shopnow" onclick="incrementButton()">ADD CART </button> 
                        </center>
                   </div>
               </div>
@@ -148,7 +152,7 @@
                       <h3>Red thriller</h3>
                       <h2>MRP-<strike> Rs:4500 </strike>Rs:3999</h2>
                       <p>Walensee Lawn Spike Aerator, T-Handle, Manual Dethatching and Soil Aerating Tool with Four Iron Spikes, 35.5 Inches, Grey</p>
-                      <button id="shopnow"><a href="#">ADD CART </a></button>
+                      <button id="shopnow" onclick="incrementButton()">ADD CART </button>
                        </center>
                   </div>
               </div>
@@ -214,7 +218,7 @@
     <hr>
     <div class="container py-4">
         <div class="copyright">
-            &copy; Copyright <strong>Fashion</strong>.All Rights Reserved
+            &copy; Copyright <strong>toolsmax</strong>.All Rights Reserved
         </div>
         
     </div>
@@ -223,7 +227,7 @@
 
 <a href="#" class="arrow"><i><img src="./image/up-arrow.png" alt="" width="50px"></i></a>
 
-    
+    <script src="main.js"></script>
 </body>
 
 </html>
